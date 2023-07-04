@@ -1,0 +1,82 @@
+.flex{
+    border: 1px solid red;
+    height: 1500px;
+    display: flex;
+    /* Вертикальное выравневание по центру */
+    align-items: center;
+    /* Выравневание по низу */
+    /* align-items: flex-end; */
+    /* Выравневание по верху
+    align-items: flex start; */
+    /* Выравневание по горизогтали, по центру */
+    /* justify-content: center; */
+    /* 1 элемент к левому, 1 к правому */
+    /* flex-direction: column; */
+    /* перенос элементов
+    flex-wrap: wrap; */
+    /* justify-content: center; */
+    
+
+
+
+}
+/* .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img{
+    max-width: 100%;
+} */
+
+.block--1{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+.block--2{
+    height: 400px;
+    width: 400px;
+    background-color: orange;
+    /* порядок расположение блока */
+    /* order: 1; */
+    /* order: -1; */
+    /* Удерживает заданными размерами один указанный обьект, остальные сжимает */
+    /* flex-shrink: 0; */
+    /* Порядок в обратную сторону */
+    flex-direction: column-reverse;
+    /* margin-left: auto; */
+
+
+}
+.block--3{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    /* выравнивание */
+    margin-left: auto;
+    margin-right: 10px;
+
+}
+
+/* 1920px
+
+1600px
+1366px
+
+1024px
+
+768px
+
+568px
+
+320px */
+
+@media (max-width:1024px){
+    .flex {
+        flex-direction: column;
+        width: vw(30);
+        function vw(x): (100vw/100% + x)px
+    }
+}
